@@ -1,0 +1,135 @@
+h1,h3,h3,span,p {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-color: #f4f4f4;
+  background-image: url("img/top.svg"), url("img/bottom.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top right, bottom left;
+}
+
+p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 200;
+}
+
+span {
+  color: #AA9471;
+  font-weight: 400;
+}
+
+.glass {
+  position: absolute;
+  top: -80px;
+  left: -470px;
+  height: 777px;
+  width: 550px;
+  background-color: rgb(160 160 160 / 22%);
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  z-index: 99;
+  border-radius: 15px;
+}
+
+.card {
+  width: 800px;
+  background: #056351;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-30%, -45%);
+  border-radius: 15px;
+  padding: 45px 45px 45px 95px;
+  box-sizing: border-box;
+}
+
+.text-block {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 15%;
+}
+
+h2 {
+  font-family: 'Mukta', sans-serif;
+  text-transform: uppercase;
+  font-size: 4em;
+  color: #AA9471;
+  margin: 0;
+  text-align: center;
+}
+
+.photo {
+  position: absolute;
+  bottom: 0;
+  width: 563px;
+}
+
+.zoom {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 134px;
+  border-radius: 3px;
+  background-color: rgb(160 160 160 / 22%);
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  transition: 0.7s;
+}
+
+.zoom:hover {
+  box-shadow: 1px 1px 2px 0px #adaaaa52;
+}
+
+.zoom-icon {
+  width: 52px;
+}
+
+.margin-top {
+  margin-top: 45px;
+}
+
+@media only screen and (max-width: 1560px) {
+  .card {
+    width: 700px;
+    padding: 45px 45px 45px 200px;
+  }
+
+  .glass {
+    width: 470px;
+    left: -300px;
+  }
+
+  .photo {
+    width: 470px;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .photo {
+    width: 300px;
+  }
+
+  .glass {
+    position: unset;
+    width: 300px;
+    height: 520px;
+  }
+
+  .card {
+    width: 340px;
+    padding: 20px;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
