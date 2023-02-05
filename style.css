@@ -7,7 +7,7 @@ h1,h3,h3,span,p {
   width: 100vw;
   position: fixed;
   background-color: #f4f4f4;
-  background-image: url("img/top.svg"), url("img/bottom.png");
+  background-image: url("img/top.svg"), url("img/bottom.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: top right, bottom left;
 }
