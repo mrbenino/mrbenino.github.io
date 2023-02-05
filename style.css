@@ -38,6 +38,7 @@ span {
 }
 
 .card {
+  margin: 120px 0;
   width: 800px;
   background: #056351;
   position: absolute;
@@ -125,6 +126,7 @@ h2 {
   }
 
   .card {
+    margin: 40px;
     width: 340px;
     padding: 20px;
     position: absolute;
